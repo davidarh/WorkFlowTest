@@ -40,6 +40,7 @@
             this.btnDisplayMessage.TabIndex = 0;
             this.btnDisplayMessage.Text = "Display Message";
             this.btnDisplayMessage.UseVisualStyleBackColor = true;
+            this.btnDisplayMessage.Click += new System.EventHandler(this.btnDisplayMessage_Click);
             // 
             // txtMessage
             // 
@@ -49,14 +50,14 @@
             this.txtMessage.Size = new System.Drawing.Size(400, 101);
             this.txtMessage.TabIndex = 1;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(477, 229);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.btnDisplayMessage);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Test Form";
             this.ResumeLayout(false);
             this.PerformLayout();
