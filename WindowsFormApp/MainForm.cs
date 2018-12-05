@@ -16,5 +16,10 @@ namespace WindowsFormsApp
         {
             InitializeComponent();
         }
+
+        private void btnDisplayMessage_Click(object sender, EventArgs e)
+        {
+            txtMessage.Text = "Message 1";
+        }
     }
 }
