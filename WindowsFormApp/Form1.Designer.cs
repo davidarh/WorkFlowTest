@@ -28,13 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnDisplayMessage = new System.Windows.Forms.Button();
+            this.txtMessage = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // btnDisplayMessage
+            // 
+            this.btnDisplayMessage.Location = new System.Drawing.Point(160, 35);
+            this.btnDisplayMessage.Name = "btnDisplayMessage";
+            this.btnDisplayMessage.Size = new System.Drawing.Size(150, 23);
+            this.btnDisplayMessage.TabIndex = 0;
+            this.btnDisplayMessage.Text = "Display Message";
+            this.btnDisplayMessage.UseVisualStyleBackColor = true;
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.Location = new System.Drawing.Point(37, 93);
+            this.txtMessage.Multiline = true;
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(400, 101);
+            this.txtMessage.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(477, 229);
+            this.Controls.Add(this.txtMessage);
+            this.Controls.Add(this.btnDisplayMessage);
+            this.Name = "Form1";
+            this.Text = "Test Form";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnDisplayMessage;
+        private System.Windows.Forms.TextBox txtMessage;
     }
 }
 
